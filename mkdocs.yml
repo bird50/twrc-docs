@@ -1,0 +1,33 @@
+site_name: TWRC Documents
+site_url: http://twrc-doc.nwcc.go.th
+site_description: เอกสารประกอบระบบทะเบียนแหล่งน้ำของประเทศไทย
+site_author: NWCC
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - footnotes
+  - def_list
+  - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid-experimental
+          format: !!python/name:pymdownx.superfences.fence_code_format
+plugins:
+  - search:
+      lang:
+        - en
+theme:
+  name: material
+  language: en
+  logo: images/logo.png
+  custom_dir: overrides
+nav:
+    - ความสำคัญของระบบทะเบียนแหล่งน้ำ: 'index.md'
+    - การแบ่งประเภทแหล่งน้ำ: 'waterresourcetype.md'
+    - 'วิธีขอขึ้นทะเบียนแหล่งน้ำ': 'tutorial-01.md'
+    - 'การดึงชุดข้อมูล': 'tutorial-02.md'
+    - 'เอกสารและคู่มือประกอบอื่น ๆ': 'other-docs.md'
